@@ -13,6 +13,7 @@ fi
 
 mkdir -p /mosquitto/data /mosquitto/config
 PASSFILE=/mosquitto/config/passwords
+umask 077
 : > "$PASSFILE"
 mosquitto_passwd -b "$PASSFILE" "$USER_NAME" "$MOSQUITTO_PASSWORD"
 chown mosquitto:mosquitto "$PASSFILE" /mosquitto/data
