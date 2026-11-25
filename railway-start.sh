@@ -26,10 +26,10 @@ log_dest stdout
 allow_anonymous false
 password_file $PASSFILE
 
-listener 1883 ::
+listener 1883
 protocol mqtt
 
-listener ${PORT:-8080} ::
+listener ${PORT:-8080}
 protocol websockets
 EOF
 
