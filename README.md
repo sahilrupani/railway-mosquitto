@@ -6,7 +6,7 @@ Password-protected MQTT broker.
 
 - `MOSQUITTO_USERNAME` (default `mqtt`) and `MOSQUITTO_PASSWORD` (required).
 - Plain MQTT on port `1883`: add a Railway TCP proxy to it.
-- MQTT over WebSockets on `$PORT` (default `8080`): point the HTTPS domain at it and connect to `wss://your-domain`.
+- MQTT over WebSockets on port `8080` (change with `MOSQUITTO_WS_LISTEN_PORT`): point the HTTPS domain at it and connect to `wss://your-domain`.
 - Optional volume at `/mosquitto/data` keeps retained messages.
 
 ## License
